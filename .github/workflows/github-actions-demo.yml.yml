@@ -15,4 +15,10 @@ jobs:
       - name: List files in the repository
         run: |
           ls ${{ github.workspace }}
+          ls -a
+          cmake ./
+          make
+          chmod +x cmake_test
+          ./cmake_test
       - run: echo "🍏 This job's status is ${{ job.status }}."
+

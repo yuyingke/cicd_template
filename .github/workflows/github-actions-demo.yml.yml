@@ -24,7 +24,7 @@ jobs:
       - name: run make
         run: |
           make
-      - name: run cmake
+      - name: run project
         run: |
           chmod +x cmake_test
           ./cmake_test
